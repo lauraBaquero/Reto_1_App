@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/menu"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:fontFamily="@font/hermando_regular"
+            android:gravity="center"
+            android:text="Platos"
+            app:autoSizeTextType="uniform" />
+
+        <ImageView
+            android:id="@+id/pulpo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/p_ulpo" />
+
+        <ImageView
+            android:id="@+id/salmon"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/salmon" />
+
+        <ImageView
+            android:id="@+id/remolacha"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/remolacha" />
+
+        <ImageView
+            android:id="@+id/atun"
+            android:layout_width="180dp"
+            android:layout_height="150dp"
+            android:src="@drawable/atun" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:fontFamily="@font/hermando_regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

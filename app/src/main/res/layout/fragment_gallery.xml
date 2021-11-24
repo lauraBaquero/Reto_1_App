@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.gallery.GalleryFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="311dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/domicilios"
+                    android:layout_width="150dp"
+                    android:layout_height="146dp"
+                    android:src="@drawable/domicilios" />
+
+                <TextView
+                    android:id="@+id/info_domi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="69dp"
+                    android:fontFamily="@font/hermando_regular"
+                    android:textColor="#000000"
+                    android:text="Pide tus domicilios" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:id="@+id/reservaciones"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/reservaciones" />
+
+                <TextView
+                    android:id="@+id/info_reservation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/hermando_regular"
+                    android:textColor="#000000"
+                    android:text="Realiza tus reservaciones" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:id="@+id/cocteles"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/cocteles" />
+
+                <TextView
+                    android:id="@+id/info_cocteles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/hermando_regular"
+                    android:textColor="#000000"
+                    android:text="servicio de cocteles y bar " />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </TableLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/hermando_regular"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
